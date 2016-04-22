@@ -98,12 +98,10 @@ public class C4Jeu{
      */
     public void joue(){
 		Scanner sc = new Scanner(System.in);
-		//System.out.println("donner la colonne");
-		//int colonne = sc.nextInt();
-		mJoueurCourant = (mCoupsJoues%2 == 0) ? 1 : 0;
-		mCoupsJoues++;
+		mJoueurCourant = (mCoupsJoues%2 == 0) ? 0 : 1;
 		System.out.println("mJoueurCourant"+mJoueurCourant);
 		mPlateau.addJeton( mJoueurs[mJoueurCourant].getColonne(),mJoueurCourant);
+		mCoupsJoues++;
 		
     }
     /**
@@ -112,11 +110,8 @@ public class C4Jeu{
      * @param pColonne la colonne choisie par le joueur courant 
      */
    public void setColonneChoisie(int pColonne){
-	    //mPlateau.addJeton(pColonne,0);
-	    
+	    mJoueurCourant = (mCoupsJoues%2 == 0) ? 0 : 1;
 	    mJoueurs[mJoueurCourant].setColonne(pColonne);
-	    System.out.println("Vous avez cliquez");
-	    
     }
     /**
      * Pour debugger. Vous pouvez imprimer les informations que vous voulez, mais je vous suggere d'imprimer le plateau de jeu. 

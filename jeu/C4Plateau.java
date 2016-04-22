@@ -192,7 +192,7 @@ public class C4Plateau{
 			  colonne = sc.nextInt();
 			  plateau.addJeton(colonne,joueurCourant);
 			  joueurCourant = (mNbCasesRemplies%2 == 0) ? ROUGE : NOIR;
-
+               System.out.println("Apres insertion\n"+plateau);
 		  }
 		 
 		 
