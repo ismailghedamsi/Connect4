@@ -16,7 +16,7 @@ public class C4Plateau{
     public static final int LARGEUR = 7; // ligne
     public static final int HAUTEUR = 6; // colonne
     
-    public int[][] mPlateau;
+    private int[][] mPlateau;
     public  static int mNbCasesRemplies;
 
     /** Constructeur par defaut
@@ -42,6 +42,13 @@ public class C4Plateau{
 	public C4Plateau(int[][] pPlateau){
 		mPlateau = pPlateau;
 	}
+	
+	/**
+	 * Getter : retourne le plateau
+	 * */
+	 public int[][] getTableau(){
+		 return mPlateau;
+	 }
 
 
     /**

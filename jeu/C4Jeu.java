@@ -62,7 +62,7 @@ public class C4Jeu{
      * @param pRangee, la rangee du plateau
      */
     public int getCase(int pColonne, int pRangee){
-        return mPlateau.mPlateau[pColonne][pRangee];
+        return mPlateau.getTableau()[pColonne][pRangee];
         //ce return n'est present que pour permettra la compilation
     }
     
